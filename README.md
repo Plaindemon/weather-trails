@@ -6,7 +6,8 @@ Benjamin Chaplin, Mitchell Brotherson, Connor Lawrence
 ## Description
 
 ## Technology Used
-
+-- bulma.io - css framework
+-- 
 ## Screenshot
 
 ## Application URL
