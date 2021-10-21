@@ -1,3 +1,8 @@
+/* * {
+    background-color: ;
+} */
+
+
 footer h1 {
     padding: 15px;
     font-size: xx-large;
@@ -28,5 +33,6 @@ footer {
 .box {
     border-radius: 5%;
     border: 1px solid blue;
+    background-color:cornflowerblue;
     
 }
