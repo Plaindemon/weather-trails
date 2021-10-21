@@ -1,3 +1,14 @@
+footer h1 {
+    padding: 15px;
+    font-size: xx-large;
+    color: white;
+}
+
+footer {
+    color: white;
+}
+
+
 .hero-body {
     background-image: url('https://hips.hearstapps.com/amv-prod-gp.s3.amazonaws.com/gearpatrol/wp-content/uploads/2016/06/best-day-hikes-gear-patrol-full-lead-1440.jpg');
     position: sticky;
@@ -14,12 +25,8 @@
      
 }
 
-footer h1 {
-    padding: 15px;
-    font-size: xx-large;
-    color: white;
-}
-
-footer {
-    color: white;
+.box {
+    border-radius: 5%;
+    border: 1px solid blue;
+    
 }
