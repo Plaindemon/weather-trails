@@ -1,0 +1,17 @@
+body h1 {
+    font-size: 50px;
+    font-style: italic;
+    color: white;
+}
+
+.header {
+    text-align: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    border: solid 2px black;
+    border-radius: 5px;
+    padding: 20px;
+}
