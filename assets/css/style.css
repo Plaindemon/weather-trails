@@ -13,3 +13,13 @@
     width: auto; */
      
 }
+
+footer h1 {
+    padding: 15px;
+    font-size: xx-large;
+    color: white;
+}
+
+footer {
+    color: white;
+}
