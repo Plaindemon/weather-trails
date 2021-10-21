@@ -1,0 +1,15 @@
+.hero-body {
+    background-image: url('https://hips.hearstapps.com/amv-prod-gp.s3.amazonaws.com/gearpatrol/wp-content/uploads/2016/06/best-day-hikes-gear-patrol-full-lead-1440.jpg');
+    position: sticky;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.columns-gap {
+    background-color:aquamarine;
+    /* height: 250px;
+    width: auto; */
+     
+}
