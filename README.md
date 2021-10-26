@@ -8,8 +8,9 @@ Benjamin Chaplin, Mitchell Brotherson, Connor Lawrence
 ## Technology Used
 -- bulma.io - css framework
 -- mapbox.com - map work
+-- trailfork
 ## Screenshot
-
+-- put screenshot here
 ## Application URL
 https://plaindemon.github.io/weather-trails/
 
@@ -18,12 +19,11 @@ https://github.com/Plaindemon/weather-trails
 
 ## Requirements
 - Use a CSS framework other than Bootstrap.
-Be deployed to GitHub Pages. 
-### -- bulma.io - css framework
+- Be deployed to GitHub Pages. 
 
 - Be interactive (i.e., accept and respond to user input).
-Use at least two server-side APIs.
--- 
+- Use at least two server-side APIs.
+ 
 
 - Does not use alerts, confirms, or prompts (use modals).
 Use client-side storage to store persistent data.
