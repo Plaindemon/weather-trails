@@ -1,6 +1,8 @@
-/* * {
-    background-color: ;
-} */
+:root {
+    --primary-color: #3C403D;
+    --secondary-color: #39603D;
+    --tertiary-color: #A3BCB6;
+  }
 
 
 footer h1 {
