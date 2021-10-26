@@ -1,3 +1,15 @@
+:root {
+    --primary-color: #3C403D;
+    --secondary-color: #39603D;
+    --tertiary-color: #A3BCB6;
+  }
+/* STYLING COLORS :
+    White: #FFFFFF
+    Light Grey: #DADED4
+    Black: #3C403D
+    Green: #39603D
+    Blue-Grey: #A3BCB6 */
+
 html {
     scroll-behavior: smooth;
 }
@@ -36,5 +48,6 @@ footer {
     background-color:rgb(85, 124, 196);
     
 }
+
 
 
