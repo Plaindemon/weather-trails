@@ -4,6 +4,9 @@
     --tertiary-color: #A3BCB6;
   }
 
+html {
+    scroll-behavior: smooth;
+}
 
 footer h1 {
     padding: 15px;
