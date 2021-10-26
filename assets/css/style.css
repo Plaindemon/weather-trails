@@ -32,7 +32,8 @@ footer {
 .box {
     border-radius: 5%;
     border: 1px solid blue;
-    background-color:cornflowerblue;
+    padding: 5px;
+    background-color:rgb(85, 124, 196);
     
 }
 
