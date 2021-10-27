@@ -31,7 +31,6 @@ footer {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    
 }
 
 .columns-gap {
@@ -49,7 +48,15 @@ footer {
     
 }
 
-.navbar {
-    background-color: var(--tertiary-color);
-} 
+#mapBox {
+    margin: 0; 
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
 
