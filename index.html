@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <title>Weather Trails</title>
 </head>
+
+
 <body>
     
   <section class="hero is-medium is-info">
@@ -20,7 +22,7 @@
             <img src="assets/images/logo.png" >
           </a>
           <!-- -->
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="/">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -38,7 +40,7 @@
             Trail Map
           </a>
 
-          <a class="navbar-item">
+          <a href="#weather" class="navbar-item">
             Weather
           </a>
           
@@ -63,18 +65,25 @@
         </div>
               
       </div>
-    <!-- </nav> -->
-    <!-- -->
+    <!-- // -->
+    <!-- //-->
       <div class="navbar-end"></div>
-      
   </nav>
+
+  <!-- search button below the navbar -->
   <div class="control">
     <input class="input" type="text" placeholder="type text here">
     <button class="button is-primary has-background-info">Search</button>
   </div>        
-    
+
+    <!-- search button below the navbar -->
+    <div class="control">
+      <input id="areaSearched" class="input" type="text" placeholder="Where do you want to go?">
+      <button class="button is-secondary has-background-info">Search</button>
+    </div>        
 
 
+  <!-- hero body section -->
         <div class="hero-body">
           <p class="title">
             Weather Trails
@@ -89,7 +98,7 @@
         </div>
       </section>
 
-  <div class="box columns">
+  <div id="weather" class="box columns">
       <div class="box title column">BOX 1<p class="box subtitle column">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic temporibus, iste aliquam omnis sapiente quod repudiandae. Quasi, laborum. Sequi enim, nam blanditiis aliquam eveniet placeat deserunt architecto totam ullam dolores.
       </p></div>
@@ -106,20 +115,6 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic temporibus, iste aliquam omnis sapiente quod repudiandae. Quasi, laborum. Sequi enim, nam blanditiis aliquam eveniet placeat deserunt architecto totam ullam dolores.
       </p></div>
   </div>
-<!-- Start of the
-      
-      <div class="panel is-primary">
-        <div class="column is-hoverable is-one-third ">
-          Favorites
-        </div>
-        <div class="column is-hoverable is-one-third">
-          Wishlist
-        </div>
-        <div class="column is-hoverable is-one-third">
-          Saved Places
-        </div>
-        
-      </div> -->
 
 <!-- hero added to below the trails panels -->
       <div class="hero-body">
@@ -196,6 +191,14 @@
             <input type="checkbox">
             save
           </label>
+          <label class="panel-block">
+            <input type="checkbox">
+            delete
+          </label>
+          <!-- <label class="panel-block">
+            <input type="checkbox">
+            move
+          </label> -->
           <div class="panel-block">
             <button class="button is-link is-outlined is-fullwidth">
               Trails
@@ -250,28 +253,24 @@
 
       <div class="navbar-brand">
        <div>
-          <a class="navbar-item" href="/" target="blank">Contact Us</a>
+          <a class="navbar-item" href="./contact-us.html" target="blank">Contact Us</a>
        </div>
        <div>
-          <a class="navbar-item"  href="/" target="blank">About Us</a>
+          <a class="navbar-item"  href="./about-us.html" target="blank">About Us</a>
        </div>
        <div>
-          <a class="navbar-item"  href="/" target="blank">Help</a>
+          <a class="navbar-item"  href="./help.html" target="blank">Help</a>
        </div>
        <div>
-          <a class="navbar-item" href="/" target="blank">Donate</a>
+          <a class="navbar-item" href="./donate.html" target="blank">Donate</a>
        </div>
        <div>
-          <a class="navbar-item" href="/" target="blank">Privacy Policy</a><br />
+          <a class="navbar-item" href="./privacy-policy.html" target="blank">Privacy Policy</a><br />
           &copy; 2021 Group-7, Inc.
        </div>
        </div>
        </nav>
-  </footer>
 
-
-
-
-    <script src="assets/css/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
