@@ -2,7 +2,7 @@
     --primary-color: #3C403D;
     --secondary-color: #39603D;
     --tertiary-color: #A3BCB6;
-  }
+  };
 /* STYLING COLORS :
     White: #FFFFFF
     Light Grey: #DADED4
@@ -49,5 +49,7 @@ footer {
     
 }
 
-
+.navbar {
+    background-color: var(--tertiary-color);
+} 
 
