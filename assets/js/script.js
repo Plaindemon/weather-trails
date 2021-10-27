@@ -1,2 +1,2 @@
 // Global Variables
-var
+// var
