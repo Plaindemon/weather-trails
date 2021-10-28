@@ -29,13 +29,18 @@ var places = fetch("https://developer.nps.gov/api/v1/parks?limit=15&start=10&fie
 	}
 })
 .then(response => {
-	console.log(response);
+    // log an array to the console using data function
+    response.json().then(function(data) {
+        console.log(data);
+      });
+	// console.log(response);
+    console.log("inside", places);
 })
 .catch(err => {
 	console.error(err);
 });
 
-console.log(places);
+console.log("outside", places);
 
 
 
@@ -178,6 +183,6 @@ function initPage() {
 
 
 }
-initPage();
+// initPage();
 
   
