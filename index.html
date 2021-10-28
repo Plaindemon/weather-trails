@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
     <title>Weather Trails</title>
 </head>
 
@@ -15,20 +17,20 @@
   <section class="hero is-medium is-info">
     <!--nav bar  -->
     <nav class="navbar" role="navigation" aria-label="main navigation">
-        <!-- -->
+        
       <div class="navbar-brand">
-          <!-- -->
+          
           <a class="navbar-item" href="https://github.com/Plaindemon/weather-trails">
             <img src="assets/images/logo.png" >
           </a>
-          <!-- -->
+          
           <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="/">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </a>
       </div>
-      <!-- -->
+      
       <div id="" class="navbar-menu has-background-success">
         <div class="navbar-start">
           <!-- Add the has-background- to  change the color of the navbar links to separate which ones are which - change to right color later -->
@@ -44,37 +46,31 @@
             Weather
           </a>
           
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          Favorites
-        </a>
-        
-        <div class="navbar-dropdown">
-          <a class="navbar-item">
-            Trail Wishlist
-          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Favorites
+            </a>
+            
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                Trail Wishlist
+              </a>
 
-          <a class="navbar-item">
-            Favorite Trails
-          </a>
+              <a class="navbar-item">
+                Favorite Trails
+              </a>
 
-          <hr class="navbar-divider">
-          <a class="navbar-item">
-            Dislike Trails
-          </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item">
+                Dislike Trails
+              </a>
+            </div>
+          </div>
         </div>
-              
       </div>
-    <!-- // -->
-    <!-- //-->
+      
       <div class="navbar-end"></div>
-  </nav>
-
-  <!-- search button below the navbar -->
-  <div class="control">
-    <input class="input" type="text" placeholder="type text here">
-    <button class="button is-primary has-background-info">Search</button>
-  </div>        
+    </nav>
 
     <!-- search button below the navbar -->
     <div class="control">
@@ -82,21 +78,20 @@
       <button class="button is-secondary has-background-info">Search</button>
     </div>        
 
-
   <!-- hero body section -->
-        <div class="hero-body">
-          <p class="title">
-            Weather Trails
-          </p>
-          <p class="subtitle">
-            "Look deep into nature and you will understand everything better." — Albert Einstein
-          </p>
-          <p class="subtitle">
-            "Leave the road, take the trails." — Pythagoras
-            
-          </p>
-        </div>
-      </section>
+    <div class="hero-body">
+      <p class="title">
+        Weather Trails
+      </p>
+      <p class="subtitle">
+        "Look deep into nature and you will understand everything better." — Albert Einstein
+      </p>
+      <p class="subtitle">
+        "Leave the road, take the trails." — Pythagoras
+        
+      </p>
+    </div>
+  </section>
 
   <div id="weather" class="box columns">
       <div class="box title column">BOX 1<p class="box subtitle column">
@@ -116,97 +111,88 @@
       </p></div>
   </div>
 
-<!-- hero added to below the trails panels -->
-      <div class="hero-body">
-        <p class="title">
-          Weather Trails
-        </p>
-        <div class="box">
-          <figure class="image is-328x328">
-            <img src="assets/images/map" alt="map placeholder">
-          </figure>
-        </div>
-        <p class="subtitle">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus quia dolores non nam, quam quae necessitatibus rem quod similique commodi esse sequi sint laborum? Nisi debitis earum sit cupiditate nam!
-          
+ 
+
+  <div id="mapBox" class="box">
+    <div id="interactiveBox" class="box"></div>
+  </div>
+  
+
+  <div class="box">
+    <nav class="panel">
+      <p class="panel-heading">
+        Trails
+      </p>
+      <div class="panel-block">
+        <p class="control has-icons-left">
+          <input class="input" type="text" placeholder="Search">
+          <span class="icon is-left">
+            <i class="fas fa-search" aria-hidden="true"></i>
+          </span>
         </p>
       </div>
+      <p class="panel-tabs">
+        <a class="is-active">All</a>
+        <a>Wishlist</a>
+        <a>Favorites</a>
+        <a>History</a>
+      </p>
+      <a class="panel-block is-active">
+        <span class="panel-icon">
+          <i class="fas fa-book" aria-hidden="true"></i>
+        </span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui veniam rem alias veritatis illo at vitae cum similique molestiae aut nesciunt officia maxime id, animi sed numquam? Porro, dicta eveniet.
+      </a>
+      <a class="panel-block">
+        <span class="panel-icon">
+          <i class="fas fa-book" aria-hidden="true"></i>
+        </span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quis commodi enim delectus nihil similique, deserunt obcaecati modi, ipsum error quisquam. Illo maxime dolorum ex molestiae culpa, dolores officiis odio? 
+      </a>
+      <a class="panel-block">
+        <span class="panel-icon">
+          <i class="fas fa-book" aria-hidden="true"></i>
+        </span>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, soluta sed aspernatur id libero quidem doloremque! Aperiam quisquam aliquam totam dolor, ipsa laudantium optio quam, quo reiciendis voluptate obcaecati unde?
+      </a>
+      <a class="panel-block">
+        <span class="panel-icon">
+          <i class="fas fa-book" aria-hidden="true"></i>
+        </span>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste mollitia, blanditiis, libero deleniti tempore saepe accusantium ab consectetur architecto quam totam, harum adipisci id. Minus corporis tempore velit omnis soluta?
+      </a>
+      <a class="panel-block">
+        <span class="panel-icon">
+          <i class="fas fa-code-branch" aria-hidden="true"></i>
+        </span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, consequuntur? Delectus quam aspernatur accusamus quas, commodi labore temporibus expedita! Ullam laboriosam impedit laborum cumque quo molestiae quos unde ex dicta.
+      </a>
+      <a class="panel-block">
+        <span class="panel-icon">
+          <i class="fas fa-code-branch" aria-hidden="true"></i>
+        </span>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse laborum odit iusto rem eos hic recusandae explicabo! Minima consectetur modi porro. Incidunt delectus molestiae nostrum in laboriosam eius, ratione itaque!
+      </a>
+      <label class="panel-block">
+        <input type="checkbox">
+        Save to Favorites
+      </label>
+      <label class="panel-block">
+        <input type="checkbox">
+        delete
+      </label>
+      <!-- <label class="panel-block">
+        <input type="checkbox">
+        move
+      </label> -->
+      <div class="panel-block">
+        <button class="button is-link is-outlined is-fullwidth">
+          Trails
+        </button>
+      </div>
+    </nav>
 
-      <div class="box">
-        <nav class="panel">
-          <p class="panel-heading">
-            Trails
-          </p>
-          <div class="panel-block">
-            <p class="control has-icons-left">
-              <input class="input" type="text" placeholder="Search">
-              <span class="icon is-left">
-                <i class="fas fa-search" aria-hidden="true"></i>
-              </span>
-            </p>
-          </div>
-          <p class="panel-tabs">
-            <a class="is-active">All</a>
-            <a>Wishlist</a>
-            <a>Favorites</a>
-            <a>Saved</a>
-          </p>
-          <a class="panel-block is-active">
-            <span class="panel-icon">
-              <i class="fas fa-book" aria-hidden="true"></i>
-            </span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui veniam rem alias veritatis illo at vitae cum similique molestiae aut nesciunt officia maxime id, animi sed numquam? Porro, dicta eveniet.
-          </a>
-          <a class="panel-block">
-            <span class="panel-icon">
-              <i class="fas fa-book" aria-hidden="true"></i>
-            </span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quis commodi enim delectus nihil similique, deserunt obcaecati modi, ipsum error quisquam. Illo maxime dolorum ex molestiae culpa, dolores officiis odio? 
-          </a>
-          <a class="panel-block">
-            <span class="panel-icon">
-              <i class="fas fa-book" aria-hidden="true"></i>
-            </span>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, soluta sed aspernatur id libero quidem doloremque! Aperiam quisquam aliquam totam dolor, ipsa laudantium optio quam, quo reiciendis voluptate obcaecati unde?
-          </a>
-          <a class="panel-block">
-            <span class="panel-icon">
-              <i class="fas fa-book" aria-hidden="true"></i>
-            </span>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste mollitia, blanditiis, libero deleniti tempore saepe accusantium ab consectetur architecto quam totam, harum adipisci id. Minus corporis tempore velit omnis soluta?
-          </a>
-          <a class="panel-block">
-            <span class="panel-icon">
-              <i class="fas fa-code-branch" aria-hidden="true"></i>
-            </span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, consequuntur? Delectus quam aspernatur accusamus quas, commodi labore temporibus expedita! Ullam laboriosam impedit laborum cumque quo molestiae quos unde ex dicta.
-          </a>
-          <a class="panel-block">
-            <span class="panel-icon">
-              <i class="fas fa-code-branch" aria-hidden="true"></i>
-            </span>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse laborum odit iusto rem eos hic recusandae explicabo! Minima consectetur modi porro. Incidunt delectus molestiae nostrum in laboriosam eius, ratione itaque!
-          </a>
-          <label class="panel-block">
-            <input type="checkbox">
-            save
-          </label>
-          <label class="panel-block">
-            <input type="checkbox">
-            delete
-          </label>
-          <!-- <label class="panel-block">
-            <input type="checkbox">
-            move
-          </label> -->
-          <div class="panel-block">
-            <button class="button is-link is-outlined is-fullwidth">
-              Trails
-            </button>
-          </div>
-        </nav>
-  
-    </div>  
+  </div>  
     <!-- </section> -->
 <!-- testing out messages for the columns
 <div class="columns">
@@ -245,31 +231,32 @@
       </div>
   </div> -->
 
-      <!-- footer -->
-    <footer>
-      <nav class="navbar navbar-brand has-background-success is-justify-content-space-between">
+  <!-- footer -->
+  <footer>
+    <nav class="navbar navbar-brand has-background-success is-justify-content-space-between">
 
       <h1>Have a Great Day Outdoors!</h1>
 
       <div class="navbar-brand">
-       <div>
+        <div>
           <a class="navbar-item" href="./contact-us.html" target="blank">Contact Us</a>
-       </div>
-       <div>
+        </div>
+        <div>
           <a class="navbar-item"  href="./about-us.html" target="blank">About Us</a>
-       </div>
-       <div>
+        </div>
+        <div>
           <a class="navbar-item"  href="./help.html" target="blank">Help</a>
-       </div>
-       <div>
+        </div>
+        <div>
           <a class="navbar-item" href="./donate.html" target="blank">Donate</a>
-       </div>
-       <div>
+        </div>
+        <div>
           <a class="navbar-item" href="./privacy-policy.html" target="blank">Privacy Policy</a><br />
           &copy; 2021 Group-7, Inc.
-       </div>
-       </div>
-       </nav>
+        </div>
+      </div>
+    </nav>
+  </footer>
 
   <script src="./assets/JS/script.js"></script>
 </body>
