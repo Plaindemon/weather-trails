@@ -20,16 +20,9 @@ var searchBtn = function() {
 // searchBtn();
 
 // code sample for passing nps.gov API - use to get trail info from nps.gov
-// Get cURL resource
-// $curl = curl_init();
-// Set options - in link below
+// // Set options 
 $dataURL = 'https://developer.nps.gov/api/v1/parks?stateCode=me';
-// curl_setopt_array($curl, array(
-// CURLOPT_RETURNTRANSFER =--> true,
-// CURLOPT_URL => $dataURL,
-// CURLOPT_USERAGENT => $_SERVER['HTTP_USER_AGENT'],
-// CURLOPT_HTTPHEADER => array('Authorization: afyndbL7m66Df4K867QK7Sr0dWfAAHIEs8iWWIVy')
-// ));
+
 // Additional code would follow
 
 
