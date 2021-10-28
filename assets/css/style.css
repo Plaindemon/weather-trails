@@ -21,6 +21,7 @@ footer h1 {
 }
 
 footer {
+    background-color: var(--primary-color);
     color: white;
 }
 
@@ -55,3 +56,33 @@ footer {
       width: 60vw; 
       height: 30vw;
 }
+/* 5 day forecast */
+
+.forecast {
+    display: inline-block;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    border: solid 3px white;
+}
+
+.columns {
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.column {
+    background-color: var(--tertiary-color);
+}
+
+.btn {
+    color: var(--secondary-color);
+    
+}
+
+
+
+
+
