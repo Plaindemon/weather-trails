@@ -2,7 +2,7 @@
     --primary-color: #3C403D;
     --secondary-color: #39603D;
     --tertiary-color: #A3BCB6;
-  }
+  };
 /* STYLING COLORS :
     White: #FFFFFF
     Light Grey: #DADED4
@@ -31,6 +31,7 @@ footer {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    
 }
 
 .columns-gap {
@@ -47,16 +48,6 @@ footer {
     background-color:rgb(85, 124, 196);
     
 }
-
-#mapBox {
-    margin: 0; 
-    padding: 0;
-    position: relative;
-    width: 100%;
-    height: 100%;
-
-}
-
 
 
 
