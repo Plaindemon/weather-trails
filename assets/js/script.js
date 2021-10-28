@@ -1,29 +1,31 @@
 // Global Variables
 // var to connect to input in search 
-// var inputForm = document.getElementById('input-city');
-// var searchCity = document.getElementById('search-city-btn');
+var inputForm = document.getElementById('input-city');
+var searchCity = document.getElementById('search-city-btn');
 
-// var formData = function() {
-//     inputForm.addEventListener('click', function(){
-//         console.log(searchCity);
-//     });
-// }
-// var searchBtn = function() {
-//     // reacts to click on the search button
-//     searchCity.addEventListener('click', function(){
-//         alert("search button was clicked");
+var formData = function() {
+    inputForm.addEventListener('click', function(){
+        console.log(searchCity);
+    });
+}
+var searchBtn = function() {
+    // reacts to click on the search button
+    searchCity.addEventListener('click', function(){
+        alert("search button was clicked");
         
-//     });
-//     console.log("HELLO");
-// };
+    });
+    console.log("HELLO");
+};
 
 // searchBtn();
 
 // code sample for passing nps.gov API - use to get trail info from nps.gov
-// // Set options 
+// // Get cURL resource
+
 $dataURL = 'https://developer.nps.gov/api/v1/parks?stateCode=me';
 
-// Additional code would follow
+
+
 
 
 
