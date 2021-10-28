@@ -11,8 +11,6 @@
   
     <title>Weather Trails</title>
 </head>
-
-
 <body>
     
   <section class="hero is-medium is-info">
@@ -43,7 +41,7 @@
             Trail Map
           </a>
 
-          <a href="#weather" class="navbar-item">
+          <a class="navbar-item">
             Weather
           </a>
           
@@ -69,48 +67,107 @@
           </div>
         </div>
       </div>
-      
+    <!-- </nav> -->
+    <!-- -->
       <div class="navbar-end"></div>
-    </nav>
+      
+  </nav>
+  <div class="control">
+    <input class="input" type="text" placeholder="type text here">
+    <button class="button is-primary has-background-info">Search</button>
+  </div>        
+    
 
-    <!-- search button below the navbar -->
-    <div class="control">
-      <input id="areaSearched" class="input" type="text" placeholder="Where do you want to go?">
-      <button class="button is-secondary has-background-info">Search</button>
-    </div>        
 
-  <!-- hero body section -->
-    <div class="hero-body">
-      <p class="title">
-        Weather Trails
-      </p>
-      <p class="subtitle">
-        "Look deep into nature and you will understand everything better." — Albert Einstein
-      </p>
-      <p class="subtitle">
-        "Leave the road, take the trails." — Pythagoras
-        
-      </p>
+        <div class="hero-body">
+          <p class="title">
+            Weather Trails
+          </p>
+          <p class="subtitle">
+            "Look deep into nature and you will understand everything better." — Albert Einstein
+          </p>
+          <p class="subtitle">
+            "Leave the road, take the trails." — Pythagoras
+            
+          </p>
+        </div>
+      </section>
+<!--5 day weather forecast-->
+<main class="columns">
+  <div class="column">
+    <div class="column">
+     <h3 class="title">Search for a City</h3>
+      <div class="input-group">
+        <input id="city-input" type="text" class="form-control" placeholder="Enter city name" aria-label="Enter city name">
+              <div class="input-group-append">
+                  <button class="btn" type="button" id="search-button">Search</button>
+     </div>
+   </div>
+  
+ </div>
+ <div class="col-8">
+ <div class="column">
+  <div class="column m-3 rounded">
+      <div class="columns">
+          <div class="column">
+              <span id="city-name" class="city-name title align-middle"></span>
+              <img id="current-pic" src="placeholder" alt="">
+          </div>
+      </div>
+      <div class="column">
+          <div>
+           <p id="temperature"></p>
+          </div>
+      </div>
+      <div class="column">
+          <div>
+           <p id="humidity"></p>
+          </div>
+      </div>
+      <div class="column">
+          <div>
+              <p id="wind-speed"></p>
+          </div>
+        </div>
+      
+      <div class="column">
+          <divd-flex">
+              <p id="UV-index"></p>
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
-
-  <div id="weather" class="box columns">
-      <div class="box title column">BOX 1<p class="box subtitle column">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic temporibus, iste aliquam omnis sapiente quod repudiandae. Quasi, laborum. Sequi enim, nam blanditiis aliquam eveniet placeat deserunt architecto totam ullam dolores.
-      </p></div>
-      <div class="box title column">BOX 2<p class="box subtitle column">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic temporibus, iste aliquam omnis sapiente quod repudiandae. Quasi, laborum. Sequi enim, nam blanditiis aliquam eveniet placeat deserunt architecto totam ullam dolores.
-      </p></div>
-      <div class="box title column">BOX 3<p class="box subtitle column">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic temporibus, iste aliquam omnis sapiente quod repudiandae. Quasi, laborum. Sequi enim, nam blanditiis aliquam eveniet placeat deserunt architecto totam ullam dolores.
-      </p></div>
-      <div class="box title column">BOX 4<p class="box subtitle column">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic temporibus, iste aliquam omnis sapiente quod repudiandae. Quasi, laborum. Sequi enim, nam blanditiis aliquam eveniet placeat deserunt architecto totam ullam dolores.
-      </p></div>
-      <div class="box title column">BOX 5<p class="box subtitle column">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic temporibus, iste aliquam omnis sapiente quod repudiandae. Quasi, laborum. Sequi enim, nam blanditiis aliquam eveniet placeat deserunt architecto totam ullam dolores.
-      </p></div>
+   <section class="column">
+     <div>
+       <h2 class="title">5 Day Forecast</h2>
+     </div>
+   </section>
+          <div class="columns">
+            <div class="column forecast has-background-tertiary align-middle"></div>
+            <div class="column forecast has-background-tertiary align-middle"></div>
+            <div class="column forecast has-background-tertiary align-middle"></div>
+            <div class="column forecast has-background-tertiary align-middle"></div>
+            <div class="column forecast has-background-tertiary align-middle"></div>
+           
+        </div>
   </div>
+</div>
+
+</main>
+<!-- Start of the
+      
+      <div class="panel is-primary">
+        <div class="column is-hoverable is-one-third ">
+          Favorites
+        </div>
+        <div class="column is-hoverable is-one-third">
+          Wishlist
+        </div>
+        <div class="column is-hoverable is-one-third">
+          Saved Places
+        </div>
+        
+      </div> -->
 
  
 
@@ -245,12 +302,13 @@
         <div>
           <a class="navbar-item" href="./privacy-policy.html" target="blank">Privacy Policy</a><br />
           &copy; 2021 Group-7, Inc.
-        </div>
-      </div>
-    </nav>
+       </div>
+       </div>
+       </nav>
   </footer>
 
-  <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
-  <script src="./assets/JS/script.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </body>
 </html>
