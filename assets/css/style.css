@@ -46,8 +46,12 @@ footer {
     border: 1px solid blue;
     padding: 5px;
     background-color:rgb(85, 124, 196);
-    
 }
 
-
-
+#interactiveBox {
+     position: block;
+      top: 0; 
+      bottom: 10; 
+      width: 60vw; 
+      height: 30vw;
+}
