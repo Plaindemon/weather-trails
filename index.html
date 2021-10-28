@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.css" rel="stylesheet">
-  <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
+    <link href="https://developer.nps.gov/api/v1/parks?stateCode=me">
+  
     <title>Weather Trails</title>
 </head>
 
@@ -128,35 +129,35 @@
   <div class="box">
     <nav class="panel">
       <p class="panel-heading">
-        Trails
+        Activities & Places Related to your search
       </p>
       <div class="panel-block">
         <p class="control has-icons-left">
-          <input class="input" type="text" placeholder="Search">
+          <!-- <input class="input" type="text" placeholder="Search">
           <span class="icon is-left">
             <i class="fas fa-search" aria-hidden="true"></i>
-          </span>
+          </span> -->
         </p>
       </div>
       <p class="panel-tabs">
-        <a class="is-active">All</a>
-        <a>Wishlist</a>
-        <a>Favorites</a>
-        <a>History</a>
+        <a class="is-active">Nearby Places</a>
+        <!-- <a>Favorites</a> -->
+        <a>Activities</a>
       </p>
+      
       <a class="panel-block is-active">
         <span class="panel-icon">
           <i class="fas fa-book" aria-hidden="true"></i>
-        </span>
+        </span> 
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui veniam rem alias veritatis illo at vitae cum similique molestiae aut nesciunt officia maxime id, animi sed numquam? Porro, dicta eveniet.
       </a>
       <a class="panel-block">
-        <span class="panel-icon">
+        <!-- <span class="panel-icon">
           <i class="fas fa-book" aria-hidden="true"></i>
-        </span>
+        </span> -->
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quis commodi enim delectus nihil similique, deserunt obcaecati modi, ipsum error quisquam. Illo maxime dolorum ex molestiae culpa, dolores officiis odio? 
       </a>
-      <a class="panel-block">
+    <!-- <a class="panel-block">
         <span class="panel-icon">
           <i class="fas fa-book" aria-hidden="true"></i>
         </span>
@@ -179,28 +180,26 @@
           <i class="fas fa-code-branch" aria-hidden="true"></i>
         </span>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse laborum odit iusto rem eos hic recusandae explicabo! Minima consectetur modi porro. Incidunt delectus molestiae nostrum in laboriosam eius, ratione itaque!
-      </a>
-      <label class="panel-block">
+      </a> -->
+      <!-- <label class="panel-block">
         <input type="checkbox">
         Save to Favorites
-      </label>
-      <label class="panel-block">
-        <input type="checkbox">
-        delete
-      </label>
+      </label> -->
+      
       <!-- <label class="panel-block">
         <input type="checkbox">
         move
       </label> -->
       <div class="panel-block">
         <button class="button is-link is-outlined is-fullwidth">
-          Trails
+          refresh
         </button>
       </div>
     </nav>
 
   </div>  
-    <!-- </section> -->
+
+
 <!-- testing out messages for the columns
 <div class="columns">
       <div>
@@ -265,6 +264,7 @@
     </nav>
   </footer>
 
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
   <script src="./assets/JS/script.js"></script>
 </body>
 </html>
