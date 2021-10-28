@@ -72,12 +72,6 @@
       <div class="navbar-end"></div>
       
   </nav>
-  <div class="control">
-    <input class="input" type="text" placeholder="type text here">
-    <button class="button is-primary has-background-info">Search</button>
-  </div>        
-    
-
 
         <div class="hero-body">
           <p class="title">
@@ -92,15 +86,15 @@
           </p>
         </div>
       </section>
-<!--5 day weather forecast-->
+<!-- 5 day weather forecast -->
 <main class="columns">
   <div class="column">
     <div class="column">
      <h3 class="title">Search for a City</h3>
       <div class="input-group">
         <input id="city-input" type="text" class="form-control" placeholder="Enter city name" aria-label="Enter city name">
-              <div class="input-group-append">
-                  <button class="btn" type="button" id="search-button">Search</button>
+          <div class="input-group-append">
+          <button class="btn" type="button" id="search-button">Search</button>
      </div>
    </div>
   
@@ -175,15 +169,19 @@
     <div id="interactiveBox" class="box"></div>
   </div>
   
-
+<!-- Start of the places list/form -->
   <div class="box">
     <nav class="panel">
       <p class="panel-heading">
         Activities & Places Related to your search
       </p>
       <div class="panel-block">
-        <p class="control has-icons-left">
-        </p>
+        <!-- <p class="control has-icons-left"> -->
+          <div class="control">
+            <input id="input-city input-city-form" class="input" type="text" placeholder="type search text here">
+            <button id="search-city-btn" class="button is-primary has-background-info">Search</button>
+          </div>    
+        <!-- </p> -->
       </div>
       <p class="panel-tabs">
         <a class="is-active">Nearby Places</a>
