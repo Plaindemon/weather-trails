@@ -19,12 +19,23 @@ var searchBtn = function() {
 
 // searchBtn();
 
-// code sample for passing nps.gov API - use to get trail info from nps.gov
-// // Get cURL resource
+// code using nps.gov API - use to get info from about places near the location desired
+// $dataURL = 'https://developer.nps.gov/api/v1/parks?stateCode=me';
 
-$dataURL = 'https://developer.nps.gov/api/v1/parks?stateCode=me';
+var places = fetch("https://developer.nps.gov/api/v1/parks?limit=15&start=10&fields=fullName%2C%20%20URL%2C%20state%2C%20%20description%2C%20activities%2C%20directionsInfo%2C%20directionsURL%2C%20weatherInfo%2C%20", {
+	"method": "GET",
+	"headers": {
+		"x-api-key": "4fxi1Pok4kgde26ywgQnyEaaxknpMlmKw3svW5lP",
+	}
+})
+.then(response => {
+	console.log(response);
+})
+.catch(err => {
+	console.error(err);
+});
 
-
+console.log(places);
 
 
 
