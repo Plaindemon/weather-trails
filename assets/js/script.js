@@ -37,7 +37,7 @@ container: 'mapBox', // container ID
 style: 'mapbox://styles/mapbox/streets-v11', // style URL
 //make function to find latitude and longitude from given input
 center: [-74.5, 40], // starting position [lng, lat]
+//data points array will be added right here which will call the trails
 zoom: 9 // starting zoom
 });
-
 console.dir(map)
