@@ -15,9 +15,7 @@
   <section class="hero is-medium is-info">
     <!--nav bar  -->
     <nav class="navbar" role="navigation" aria-label="main navigation">
-        
       <div class="navbar-brand">
-          
           <a class="navbar-item" href="https://github.com/Plaindemon/weather-trails">
             <img src="assets/images/logo.png" >
           </a>
@@ -36,11 +34,11 @@
             Home
           </a>
         
-          <a class="navbar-item">
+          <a class="navbar-item" href="#mapBox">
             Trail Map
           </a>
 
-          <a class="navbar-item">
+          <a class="navbar-item" href="#weather">
             Weather
           </a>
           
@@ -50,11 +48,11 @@
             </a>
             
             <div class="navbar-dropdown">
-              <a class="navbar-item">
+              <a class="navbar-item" href="wishlist">
                 Trail Wishlist
               </a>
 
-              <a class="navbar-item">
+              <a class="navbar-item" href="favorites">
                 Favorite Trails
               </a>
 
@@ -66,93 +64,90 @@
           </div>
         </div>
       </div>
-    <!-- </nav> -->
-    <!-- -->
+      <!-- </nav> -->
+      <!-- -->
       <div class="navbar-end"></div>
       
-  </nav>
-  <div class="control">
-    <input class="input" type="text" placeholder="type text here">
-    <button class="button is-primary has-background-info">Search</button>
-  </div>        
+    </nav>
+    <div class="control">
+      <input class="input" type="text" placeholder="type text here">
+      <button class="button is-primary has-background-info">Search</button>
+    </div>        
     
-
-
-        <div class="hero-body">
-          <p class="title">
-            Weather Trails
-          </p>
-          <p class="subtitle">
-            "Look deep into nature and you will understand everything better." — Albert Einstein
-          </p>
-          <p class="subtitle">
-            "Leave the road, take the trails." — Pythagoras
-            
-          </p>
-        </div>
-      </section>
-<!--5 day weather forecast-->
-<main class="columns">
-  <div class="column">
+    <div class="hero-body">
+      <p class="title">
+        Weather Trails
+      </p>
+      <p class="subtitle">
+        "Look deep into nature and you will understand everything better." — Albert Einstein
+      </p>
+      <p class="subtitle">
+        "Leave the road, take the trails." — Pythagoras
+      </p>
+    </div>
+  </section>
+  <!--5 day weather forecast-->
+  <main id="weather" class="columns">
     <div class="column">
-     <h3 class="title">Search for a City</h3>
-      <div class="input-group">
-        <input id="city-input" type="text" class="form-control" placeholder="Enter city name" aria-label="Enter city name">
-              <div class="input-group-append">
-                  <button class="btn" type="button" id="search-button">Search</button>
-     </div>
-   </div>
-  
- </div>
- <div class="col-8">
- <div class="column">
-  <div class="column m-3 rounded">
-      <div class="columns">
-          <div class="column">
-              <span id="city-name" class="city-name title align-middle"></span>
-              <img id="current-pic" src="placeholder" alt="">
-          </div>
-      </div>
       <div class="column">
-          <div>
-           <p id="temperature"></p>
-          </div>
-      </div>
-      <div class="column">
-          <div>
-           <p id="humidity"></p>
-          </div>
-      </div>
-      <div class="column">
-          <div>
-              <p id="wind-speed"></p>
-          </div>
-        </div>
-      
-      <div class="column">
-          <divd-flex">
-              <p id="UV-index"></p>
-          </div>
-        </div>
+      <h3 class="title">Search for a City</h3>
+        <div class="input-group">
+          <input id="city-input" type="text" class="form-control" placeholder="Enter city name" aria-label="Enter city name">
+                <div class="input-group-append">
+                    <button class="btn" type="button" id="search-button">Search</button>
       </div>
     </div>
-   <section class="column">
-     <div>
-       <h2 class="title">5 Day Forecast</h2>
-     </div>
-   </section>
-          <div class="columns">
-            <div class="column forecast has-background-tertiary align-middle"></div>
-            <div class="column forecast has-background-tertiary align-middle"></div>
-            <div class="column forecast has-background-tertiary align-middle"></div>
-            <div class="column forecast has-background-tertiary align-middle"></div>
-            <div class="column forecast has-background-tertiary align-middle"></div>
-           
-        </div>
+    
   </div>
-</div>
+  <div class="col-8">
+  <div class="column">
+    <div class="column m-3 rounded">
+        <div class="columns">
+            <div class="column">
+                <span id="city-name" class="city-name title align-middle"></span>
+                <img id="current-pic" src="placeholder" alt="">
+            </div>
+        </div>
+        <div class="column">
+            <div>
+            <p id="temperature"></p>
+            </div>
+        </div>
+        <div class="column">
+            <div>
+            <p id="humidity"></p>
+            </div>
+        </div>
+        <div class="column">
+            <div>
+                <p id="wind-speed"></p>
+            </div>
+          </div>
+        
+        <div class="column">
+            <divd-flex">
+                <p id="UV-index"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <section class="column">
+      <div>
+        <h2 class="title">5 Day Forecast</h2>
+      </div>
+    </section>
+            <div class="columns">
+              <div class="column forecast has-background-tertiary align-middle"></div>
+              <div class="column forecast has-background-tertiary align-middle"></div>
+              <div class="column forecast has-background-tertiary align-middle"></div>
+              <div class="column forecast has-background-tertiary align-middle"></div>
+              <div class="column forecast has-background-tertiary align-middle"></div>
+            
+          </div>
+    </div>
+  </div>
 
-</main>
+  </main>
 <!-- Start of the
       
       <div class="panel is-primary">
@@ -190,8 +185,8 @@
       </div>
       <p class="panel-tabs">
         <a class="is-active">All</a>
-        <a>Wishlist</a>
-        <a>Favorites</a>
+        <a id="wishlist">Wishlist</a>
+        <a id="favorites">Favorites</a>
         <a>History</a>
       </p>
       <a class="panel-block is-active">
@@ -248,45 +243,45 @@
         </button>
       </div>
     </nav>
-
   </div>  
+  
     <!-- </section> -->
-<!-- testing out messages for the columns
-<div class="columns">
-      <div>
-        <article class="message">
-          <div class="message-header">
-            <p>Hello World</p>
-            <button class="delete" aria-label="delete"></button>
+    <!-- testing out messages for the columns
+    <div class="columns">
+          <div>
+            <article class="message">
+              <div class="message-header">
+                <p>Hello World</p>
+                <button class="delete" aria-label="delete"></button>
+              </div>
+              <div class="message-body column">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+              </div>
+            </article>
           </div>
-          <div class="message-body column">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+          <div class="columns">
+            <article class="message">
+              <div class="message-header">
+                <p>Hello World</p>
+                <button class="delete" aria-label="delete"></button>
+              </div>
+              <div class="message-body column">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+              </div>
+            </article>
           </div>
-        </article>
-      </div>
-      <div class="columns">
-        <article class="message">
-          <div class="message-header">
-            <p>Hello World</p>
-            <button class="delete" aria-label="delete"></button>
+          <div class="columns">
+            <article class="message column">
+              <div class="message-header">
+                <p>Hello World</p>
+                <button class="delete" aria-label="delete"></button>
+              </div>
+              <div class="message-body column">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+              </div>
+            </article>
           </div>
-          <div class="message-body column">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-          </div>
-        </article>
-      </div>
-      <div class="columns">
-        <article class="message column">
-          <div class="message-header">
-            <p>Hello World</p>
-            <button class="delete" aria-label="delete"></button>
-          </div>
-          <div class="message-body column">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-          </div>
-        </article>
-      </div>
-  </div> -->
+      </div> -->
 
   <!-- footer -->
   <footer>
