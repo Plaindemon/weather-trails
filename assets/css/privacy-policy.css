@@ -3,15 +3,27 @@ body h1 {
     font-style: italic;
     color: white;
 }
+html {
+    background-image: url('https://hips.hearstapps.com/amv-prod-gp.s3.amazonaws.com/gearpatrol/wp-content/uploads/2016/06/best-day-hikes-gear-patrol-full-lead-1440.jpg');
+    position: sticky;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
 
 .header {
     text-align: center;
     align-items: center;
 }
 
-.container {
+.project {
     display: flex;
     border: solid 2px black;
     border-radius: 5px;
     padding: 20px;
+    margin: 30px;
+    font-size: 25px;
+    font-style: oblique;
+    background-color: white;
 }
