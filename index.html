@@ -16,9 +16,7 @@
   <section class="hero is-medium is-info">
     <!--nav bar start  -->
     <nav class="navbar" role="navigation" aria-label="main navigation">
-        
       <div class="navbar-brand">
-          
           <a class="navbar-item" href="https://github.com/Plaindemon/weather-trails">
             <img src="assets/images/logo.png" >
           </a>
@@ -37,11 +35,11 @@
             Home
           </a>
         
-          <a class="navbar-item">
+          <a class="navbar-item" href="#mapBox">
             Trail Map
           </a>
 
-          <a class="navbar-item">
+          <a class="navbar-item" href="#weather">
             Weather
           </a>
           
@@ -51,11 +49,11 @@
             </a>
             
             <div class="navbar-dropdown">
-              <a class="navbar-item">
+              <a class="navbar-item" href="wishlist">
                 Trail Wishlist
               </a>
 
-              <a class="navbar-item">
+              <a class="navbar-item" href="favorites">
                 Favorite Trails
               </a>
 
@@ -110,43 +108,30 @@
           </div>
       </div>
       <div class="column">
-          <div>
-           <p id="temperature"></p>
-          </div>
+      <h3 class="title">Search for a City</h3>
+        <div class="input-group">
+          <input id="city-input" type="text" class="form-control" placeholder="Enter city name" aria-label="Enter city name">
+                <div class="input-group-append">
+                    <button class="btn" type="button" id="search-button">Search</button>
       </div>
-      <div class="column">
-          <div>
-           <p id="humidity"></p>
-          </div>
-      </div>
-      <div class="column">
-          <div>
-              <p id="wind-speed"></p>
-          </div>
-        </div>
-      
-      <div class="column">
-          <divd-flex">
-              <p id="UV-index"></p>
-          </div>
-        </div>
-      </div>
-    </div>
-   <section class="column">
-     <div>
-       <h2 class="title">5 Day Forecast</h2>
-     </div>
-   </section>
-          <div class="columns">
-            <div class="column forecast has-background-tertiary align-middle"></div>
-            <div class="column forecast has-background-tertiary align-middle"></div>
-            <div class="column forecast has-background-tertiary align-middle"></div>
-            <div class="column forecast has-background-tertiary align-middle"></div>
-            <div class="column forecast has-background-tertiary align-middle"></div>
-           
-        </div>
+    </div> 
   </div>
-</div>
+
+    <section class="column">
+      <div>
+        <h2 class="title">5 Day Forecast</h2>
+      </div>
+    </section>
+            <div class="columns">
+              <div class="column forecast has-background-tertiary align-middle"></div>
+              <div class="column forecast has-background-tertiary align-middle"></div>
+              <div class="column forecast has-background-tertiary align-middle"></div>
+              <div class="column forecast has-background-tertiary align-middle"></div>
+              <div class="column forecast has-background-tertiary align-middle"></div>
+            
+          </div>
+    </div>
+  </div>
 
 </main>
 <!-- End of the 5 Day Weather Forecast -->
@@ -186,7 +171,6 @@
         </button>
       </div>
     </nav>
-
   </div>  
 
 
