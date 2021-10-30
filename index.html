@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.css" rel="stylesheet">
-    <link href="https://developer.nps.gov/api/v1/parks?stateCode=me">
+    
   
     <title>Weather Trails</title>
 </head>
@@ -178,7 +178,7 @@
       <div class="panel-block">
         <!-- <p class="control has-icons-left"> -->
           <div class="control">
-            <input id="input-city input-city-form" class="input" type="text" placeholder="type search text here">
+            <input id="input-state" class="input" type="text" placeholder="type search text here">
             <button id="search-city-btn" class="button is-primary has-background-info">Search</button>
           </div>    
         <!-- </p> -->
@@ -189,21 +189,16 @@
         <a>Activities</a>
       </p>
       
-      <a class="panel-block is-active">
-        <span class="panel-icon">
+      <div id="input-container" class="panel-block">
+        <!-- <span class="panel-icon">
           <i class="fas fa-book" aria-hidden="true"></i>
-        </span> 
+        </span>  -->
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui veniam rem alias veritatis illo at vitae cum similique molestiae aut nesciunt officia maxime id, animi sed numquam? Porro, dicta eveniet.
-      </a>
-      <a class="panel-block">
+      </div>
+      <!-- <a class="panel-block">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quis commodi enim delectus nihil similique, deserunt obcaecati modi, ipsum error quisquam. Illo maxime dolorum ex molestiae culpa, dolores officiis odio? 
-      </a>
-    <!-- <a class="panel-block">
-        <span class="panel-icon">
-          <i class="fas fa-book" aria-hidden="true"></i>
-        </span>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, soluta sed aspernatur id libero quidem doloremque! Aperiam quisquam aliquam totam dolor, ipsa laudantium optio quam, quo reiciendis voluptate obcaecati unde?
       </a> -->
+    
       <div class="panel-block">
         <button class="button is-link is-outlined is-fullwidth">
           refresh
@@ -214,42 +209,6 @@
   </div>  
 
 
-<!-- testing out messages for the columns
-<div class="columns">
-      <div>
-        <article class="message">
-          <div class="message-header">
-            <p>Hello World</p>
-            <button class="delete" aria-label="delete"></button>
-          </div>
-          <div class="message-body column">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-          </div>
-        </article>
-      </div>
-      <div class="columns">
-        <article class="message">
-          <div class="message-header">
-            <p>Hello World</p>
-            <button class="delete" aria-label="delete"></button>
-          </div>
-          <div class="message-body column">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-          </div>
-        </article>
-      </div>
-      <div class="columns">
-        <article class="message column">
-          <div class="message-header">
-            <p>Hello World</p>
-            <button class="delete" aria-label="delete"></button>
-          </div>
-          <div class="message-body column">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-          </div>
-        </article>
-      </div>
-  </div> -->
 
   <!-- footer -->
   <footer>
@@ -277,9 +236,11 @@
        </div>
        </nav>
   </footer>
-
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
-    <script src="assets/js/script.js"></script>
+  
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
+    
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/homePage.js"></script>
 </body>
 </html>
