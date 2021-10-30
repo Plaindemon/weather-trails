@@ -26,8 +26,6 @@ $dataURL = 'https://developer.nps.gov/api/v1/parks?stateCode=me';
 // Additional code would follow
 
 
-
-
 mapboxgl.accessToken = 'pk.eyJ1IjoieW91cmJyb3RoZXJzb24iLCJhIjoiY2t2N29tOHc4MXI5ZDJvcDY0Z3BpOGdscSJ9.8CudkVmUxTWSc71lYIYdag';
 
 const map = new mapboxgl.Map({
@@ -96,12 +94,23 @@ function initPage() {
     searchEl.addEventListener("click",function() {
         const searchTerm = inputEl.value;
         getWeather(searchTerm);
+        getLatLong( )
     })
 
 
     function k2f(K) {
         return Math.floor((K - 273.15) *1.8 +32);
     }
-
+    console.log('this is a test')
+    var getLatLong = () => {
+        const latLongURL = "https://api.myptv.com/geocoding/v1/locations/by-text";
+        const latLongAPIKey = "OTUyYmJiMTQzMzExNDhiNGJiNjc3ZjIxZmJkZTg2MWE6Y2Q0NDc5ZTEtMTNhNy00NmUwLTllOWItZjJmYjU4N2RmZjdi";
+        let latLongQuery = `${latLongURL}?searchText=${inputEl}%20US&apiKey=${latLongAPIKey}`
+        fetch(latLongQuery)
+        .then(function(response) {
+            console.log(response.json())
+            console.log('salt lake city')
+        })
+    }
 }
 initPage(); 
