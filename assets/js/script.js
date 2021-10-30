@@ -32,11 +32,11 @@ mapboxgl.accessToken = 'pk.eyJ1IjoieW91cmJyb3RoZXJzb24iLCJhIjoiY2t2N29tOHc4MXI5Z
 
 const map = new mapboxgl.Map({
 container: 'mapBox', // container ID
-style: 'mapbox://styles/mapbox/streets-v11', // style URL
+style: 'mapbox://styles/mapbox/outdoors-v11', // style URL
 //make function to find latitude and longitude from given input
-center: [-74.5, 40], // starting position [lng, lat]
-//data points array will be added right here which will call the trails
-zoom: 9 // starting zoom
+center: [-40.7, 70], // starting position [lng, lat]
+// // data points array will be added right here which will call the trails
+zoom: 6, 
 });
 console.dir(map)
 
@@ -134,6 +134,4 @@ function initPage() {
     }
 
 }
-initPage();
-
-  
+initPage(); 
