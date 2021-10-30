@@ -22,7 +22,7 @@ function parkInfo() {
         var ulEl = document.createElement("ul");
         // do all the html stuff to display the parks
         for(var i = 0; i <result.data.length; i++) {
-            
+            // changes the html 
             var liEl = document.createElement("li");
             var aEl = document.createElement('a');
             aEl.setAttribute('href',result.data[i].url);
@@ -36,36 +36,6 @@ function parkInfo() {
     .catch(error => console.log('error', error));
 }
 
-    // var submitSearch = function(event) {
-    // event.preventDefault();
-    // // console.log(event);
-    // var inputSearchText = inputSearchName.value.trim();
-
-    // if (userInput) {
-    //     parks(userInput);
-    //     inputSearchName.value = "";
-
-    // }
-    // else {
-    //     alert("Enter Valid State or City");
-    // }
-    // };
-    // inputSearchText();
-    // var clickSearch = function(event) {
-    // var searchActivity = event.target.getElementById("#input-city-form");
-    // console.log(searchActivity);
-    // }
-//event Listener 
-// 
-// searchCityBtn.addEventListener("click", )
-
-
-var formData = function() {
-    inputForm.addEventListener('click', function(){
-        alert('button was clicked');
-        console.log(inputForm);
-    });
-};
 // var searchBtn = function() {
 //     // reacts to click on the search button
 searchCityBtn.addEventListener('click', function(){
@@ -78,26 +48,4 @@ searchCityBtn.addEventListener('click', function(){
 
 
 
-// var parks = fetch("https://developer.nps.gov/api/v1/parks?limit=15&start=10&fields=fullName%2C%20%20URL%2C%20state%2C%20%20description%2C%20activities%2C%20directionsInfo%2C%20directionsURL%2C%20weatherInfo%2C%20", {
-// 	"method": "GET",
-// 	"headers": {
-// 		"x-api-key": "4fxi1Pok4kgde26ywgQnyEaaxknpMlmKw3svW5lP",
-// 	}
-//     })
-//     .then(response => {
-//     // log an array to the console using data function
-//     response.json().then(function(data) {
-//         console.log(data);
-//       });
-// 	    // console.log(response);
-//         console.log("inside", parks);
-//     })
-//     .catch(err => {
-// 	    console.error(err);
-// });
 
-
-// console.log("outside", parks);
-
-// console.log(inputForm);
-// console.log(searchCityBtn);
