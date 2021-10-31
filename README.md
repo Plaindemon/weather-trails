@@ -4,14 +4,18 @@
 Benjamin Chaplin, Mitchell Brotherson, Connor Lawrence
 
 ## Description
--- 
+-- Weather trails is a new web application for searching up the weather in an area before planning a recreational trip such as hiking, biking, camping, weather info and more. 
 ## Technology Used
 -- https://bulma.io/ - CSS Modern Framework
 -- https://mapbox.com - Interactive Map on Page
 -- https://www.nps.gov/subjects/developer/index.htm - National Parks Service API
 -- https://openweathermap.org/api - Open Weather API 
 ## Screenshot
--- put screenshot here
+[Navbar](./assets/images/screenshot1.png)
+[5DayWeather](./assets/images/screenshot2.png)
+[Interactivemap](./assets/images/screenshot3.png)
+[Activites/Footer](./assets/images/screenshot4.png)
+
 ## Application URL
 https://plaindemon.github.io/weather-trails/
 
