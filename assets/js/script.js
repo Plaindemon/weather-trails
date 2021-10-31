@@ -1,17 +1,17 @@
-
+// weather API key
+const APIKey = "c69bc69003846c93e0fb0181c65079e1";
 
 mapboxgl.accessToken = 'pk.eyJ1IjoieW91cmJyb3RoZXJzb24iLCJhIjoiY2t2N29tOHc4MXI5ZDJvcDY0Z3BpOGdscSJ9.8CudkVmUxTWSc71lYIYdag';
 
-const map = new mapboxgl.Map({
-    container: 'mapBox', // container ID
-    style: 'mapbox://styles/mapbox/streets-v11', // style URL
-    //make function to find latitude and longitude from given input
-    center: [-74.5, 40], // starting position [lng, lat]
-    //data points array will be added right here which will call the trails
-    zoom: 9 // starting zoom
+let map = new mapboxgl.Map({
+container: 'mapBox', // container ID
+style: 'mapbox://styles/mapbox/outdoors-v11', // style URL
+//make function to find latitude and longitude from given input
+center: [2.4, 48.85], // starting position [lng, lat]
+zoom: 3, 
 });
-console.dir(map)
 
+console.dir(map)
 
 // 5 day weather forecast
 
@@ -21,10 +21,6 @@ function initPage() {
 
     let searchHistory = JSON.parse(localStorage.getItem("search")) || [];
     console.log(searchHistory);
-    
-
-    const APIKey = "c69bc69003846c93e0fb0181c65079e1";
-
 
     function getWeather(cityName) {
 
@@ -62,6 +58,16 @@ function initPage() {
                 forecastEls[i].append(forecastHumidityEl);
                 }
             })
+            let latitude = response.data.coord.lat;
+            console.log(latitude);
+            let longitude = response.data.coord.lon;
+            console.log(longitude);
+            map = new mapboxgl.Map({
+                container: 'mapBox', // container ID
+                style: 'mapbox://styles/mapbox/outdoors-v11', // style URL
+                center: [longitude, latitude],
+                zoom: 11, 
+                });
         });  
     }
 
@@ -95,10 +101,6 @@ function initPage() {
     if (searchHistory.length > 0) {
         getWeather(searchHistory[searchHistory.length - 1]);
     }
-
-
-
-
 };
 
 initPage();
