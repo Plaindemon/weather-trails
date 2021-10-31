@@ -9,7 +9,7 @@ var inputContainerEl = document.querySelector("#input-container");
 var parks = [];
 var weatherInfo = [];
 var directionsInfo = [];
-var directionsUrl
+var directionsUrl = [];
 
 // code using nps.gov API - use to get info from about places near the location desired 
 var requestOptions = {
@@ -56,7 +56,7 @@ function parkDirectionsInfo() {
             
             var liEl = document.createElement("li");
             var aEl = document.createElement('a');
-            aEl.setAttribute('href',result.data[i].url);
+            aEl.setAttribute('href',result.data[i].directionsUrl);
             aEl.innerText = result.data[i].directionsInfo;
             liEl.appendChild(aEl);
             ulEl.appendChild(liEl);
@@ -98,7 +98,6 @@ function parkWeatherInfo() {
 
 var formData = function() {
     inputForm.addEventListener('click', function(){
-        alert('button was clicked');
         console.log(inputForm);
     });
 };
@@ -107,8 +106,6 @@ var formData = function() {
 searchCityBtn.addEventListener('click', function(){
         // alert("search button was clicked");
         parkInfo();
-        
-        
 });
 
 directionsInfoBtn.addEventListener('click', function(){
