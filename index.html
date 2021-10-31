@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.css" rel="stylesheet">
-  <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
+    
+  
     <title>Weather Trails</title>
 </head>
 <body>
     
   <section class="hero is-medium is-info">
-    <!--nav bar  -->
+    <!--nav bar start  -->
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
           <a class="navbar-item" href="https://github.com/Plaindemon/weather-trails">
@@ -64,37 +65,39 @@
           </div>
         </div>
       </div>
-      <!-- </nav> -->
-      <!-- -->
       <div class="navbar-end"></div>
-      
-    </nav>
-       
-    
-    <div class="hero-body">
-      <p class="title">
-        Weather Trails
-      </p>
-      <p class="subtitle">
-        "Look deep into nature and you will understand everything better." — Albert Einstein
-      </p>
-      <p class="subtitle">
-        "Leave the road, take the trails." — Pythagoras
-      </p>
-    </div>
-  </section>
-  <!--5 day weather forecast-->
-  <main id="weather" class="columns">
+  </nav>
+  <!-- End of the navbar -->
+
+  <!-- Start of the hero-body -->
+        <div class="hero-body">
+          <p class="title">
+            Weather Trails
+          </p>
+          <p class="subtitle">
+            "Look deep into nature and you will understand everything better." — Albert Einstein
+          </p>
+          <p class="subtitle">
+            "Leave the road, take the trails." — Pythagoras
+            
+          </p>
+        </div>
+      </section>
+<!-- end of the hero section -->
+
+<!-- 5 day weather forecast -->
+<main class="columns">
+  <div class="column">
     <div class="column">
-      <div class="column">
-      <h3 class="title">Search for a City</h3>
-        <div class="input-group">
-          <input id="city-input" type="text" class="form-control" placeholder="Enter city name to see weather" aria-label="Enter city name">
-                <div class="input-group-append">
-                    <button class="btn" type="button" id="search-button">Search</button>
-      </div>
-    </div> 
-  </div>
+     <h3 class="title">Search for a City</h3>
+      <div class="input-group">
+        <input id="city-input" type="text" class="form-control" placeholder="Enter city name to see weather" aria-label="Enter city name to see weather">
+          <div class="input-group-append">
+          <button class="btn" type="button" id="search-button">Search</button>
+     </div>
+   </div>
+  
+ </div>
 
     <section class="column">
       <div>
@@ -112,141 +115,47 @@
     </div>
   </div>
 
-  </main>
-<!-- Start of the
-      
-      <div class="panel is-primary">
-        <div class="column is-hoverable is-one-third ">
-          Favorites
-        </div>
-        <div class="column is-hoverable is-one-third">
-          Wishlist
-        </div>
-        <div class="column is-hoverable is-one-third">
-          Saved Places
-        </div>
-        
-      </div> -->
-
- 
-
+</main>
+<!-- End of the 5 Day Weather Forecast -->
+<!-- Start of map -->
   <div id="mapBox" class="box">
     <div id="interactiveBox" class="box"></div>
   </div>
-  
+<!-- End of Map -->
 
+<!-- Start of the places list/form -->
   <div class="box">
     <nav class="panel">
       <p class="panel-heading">
-        Trails
+        Activities & Places Related to your search
       </p>
       <div class="panel-block">
-        <p class="control has-icons-left">
-          <input class="input" type="text" placeholder="Search">
-          <span class="icon is-left">
-            <i class="fas fa-search" aria-hidden="true"></i>
-          </span>
-        </p>
+        <!-- <p class="control has-icons-left"> -->
+          <div class="control">
+            <input id="input-state" class="input" type="text" placeholder="type search text here">
+            <button id="search-city-btn" class="button is-primary has-background-info">Search</button>
+          </div>    
+        <!-- </p> -->
       </div>
       <p class="panel-tabs">
-        <a class="is-active">All</a>
-        <a id="wishlist">Wishlist</a>
-        <a id="favorites">Favorites</a>
-        <a>History</a>
+        <a class="is-active">Nearby Places</a>
+        <!-- <a>Favorites</a> -->
+        <a>Activities</a>
       </p>
-      <a class="panel-block is-active">
-        <span class="panel-icon">
-          <i class="fas fa-book" aria-hidden="true"></i>
-        </span>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui veniam rem alias veritatis illo at vitae cum similique molestiae aut nesciunt officia maxime id, animi sed numquam? Porro, dicta eveniet.
-      </a>
-      <a class="panel-block">
-        <span class="panel-icon">
-          <i class="fas fa-book" aria-hidden="true"></i>
-        </span>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quis commodi enim delectus nihil similique, deserunt obcaecati modi, ipsum error quisquam. Illo maxime dolorum ex molestiae culpa, dolores officiis odio? 
-      </a>
-      <a class="panel-block">
-        <span class="panel-icon">
-          <i class="fas fa-book" aria-hidden="true"></i>
-        </span>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, soluta sed aspernatur id libero quidem doloremque! Aperiam quisquam aliquam totam dolor, ipsa laudantium optio quam, quo reiciendis voluptate obcaecati unde?
-      </a>
-      <a class="panel-block">
-        <span class="panel-icon">
-          <i class="fas fa-book" aria-hidden="true"></i>
-        </span>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste mollitia, blanditiis, libero deleniti tempore saepe accusantium ab consectetur architecto quam totam, harum adipisci id. Minus corporis tempore velit omnis soluta?
-      </a>
-      <a class="panel-block">
-        <span class="panel-icon">
-          <i class="fas fa-code-branch" aria-hidden="true"></i>
-        </span>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, consequuntur? Delectus quam aspernatur accusamus quas, commodi labore temporibus expedita! Ullam laboriosam impedit laborum cumque quo molestiae quos unde ex dicta.
-      </a>
-      <a class="panel-block">
-        <span class="panel-icon">
-          <i class="fas fa-code-branch" aria-hidden="true"></i>
-        </span>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse laborum odit iusto rem eos hic recusandae explicabo! Minima consectetur modi porro. Incidunt delectus molestiae nostrum in laboriosam eius, ratione itaque!
-      </a>
-      <label class="panel-block">
-        <input type="checkbox">
-        Save to Favorites
-      </label>
-      <label class="panel-block">
-        <input type="checkbox">
-        delete
-      </label>
-      <!-- <label class="panel-block">
-        <input type="checkbox">
-        move
-      </label> -->
+      
+      <div id="input-container" class="panel-block">
+        
+      </div>
+
       <div class="panel-block">
         <button class="button is-link is-outlined is-fullwidth">
-          Trails
+          refresh
         </button>
       </div>
     </nav>
   </div>  
-  
-    <!-- </section> -->
-    <!-- testing out messages for the columns
-    <div class="columns">
-          <div>
-            <article class="message">
-              <div class="message-header">
-                <p>Hello World</p>
-                <button class="delete" aria-label="delete"></button>
-              </div>
-              <div class="message-body column">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-              </div>
-            </article>
-          </div>
-          <div class="columns">
-            <article class="message">
-              <div class="message-header">
-                <p>Hello World</p>
-                <button class="delete" aria-label="delete"></button>
-              </div>
-              <div class="message-body column">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-              </div>
-            </article>
-          </div>
-          <div class="columns">
-            <article class="message column">
-              <div class="message-header">
-                <p>Hello World</p>
-                <button class="delete" aria-label="delete"></button>
-              </div>
-              <div class="message-body column">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-              </div>
-            </article>
-          </div>
-      </div> -->
+
+
 
   <!-- footer -->
   <footer>
@@ -274,8 +183,11 @@
        </div>
        </nav>
   </footer>
-
-    <script src="assets/js/script.js"></script>
+  
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
+    
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/homePage.js"></script>
 </body>
 </html>
