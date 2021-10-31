@@ -22,7 +22,7 @@ function parkInfo() {
         var ulEl = document.createElement("ul");
         // do all the html stuff to display the parks
         for(var i = 0; i <result.data.length; i++) {
-            // changes the html 
+            
             var liEl = document.createElement("li");
             var aEl = document.createElement('a');
             aEl.setAttribute('href',result.data[i].url);
@@ -36,6 +36,15 @@ function parkInfo() {
     .catch(error => console.log('error', error));
 }
 
+
+
+
+var formData = function() {
+    inputForm.addEventListener('click', function(){
+        alert('button was clicked');
+        console.log(inputForm);
+    });
+};
 // var searchBtn = function() {
 //     // reacts to click on the search button
 searchCityBtn.addEventListener('click', function(){
@@ -43,7 +52,6 @@ searchCityBtn.addEventListener('click', function(){
         parkInfo();
         
 });
-
 
 
 
