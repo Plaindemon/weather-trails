@@ -4,7 +4,7 @@
 Benjamin Chaplin, Mitchell Brotherson, Connor Lawrence
 
 ## Description
-
+-- 
 ## Technology Used
 -- https://bulma.io/ - CSS Modern Framework
 -- https://mapbox.com - Interactive Map on Page
