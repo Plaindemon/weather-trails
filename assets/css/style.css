@@ -23,7 +23,7 @@ footer h1 {
 .footer {
     background-color: rgba(60, 64, 61, 0.5);
     
-    color: white;
+    color: black;
 }
 
 .hero-body {
@@ -41,17 +41,44 @@ footer h1 {
     width: auto; */
      
 }
-
+/*  start of the activity box class */
 #activity-box {
     border-radius: 5px;
     border: 1px solid rgba(60, 64, 61, 1);
     padding: 5px;
     background-color:rgba(85, 124, 196, 0.3);
+    
+    
 }
-#input-container {
+ /* Start of the style for the buttons within the activity box except the search button which is currently designated as active with bulma */ 
+#activity-box .btn {
+    border-radius: 5px;
     border: 1px solid rgba(60, 64, 61, 1);
+    padding: 5px;
+    background-color:rgba(85, 124, 196, 0.3);
+    /* class btn to change the background color of the buttons in the activities box  */
+    
+}
+#activity-box .btn:hover {
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    background-color:rgba(255, 255, 255, 0.5);
+    /* class btn to change the background color of the buttons in the activities box when hovered over  */
+    
+}
+
+
+/* Input container is what stores the javascript generated data into the activities box - styling is only show if the state is searched */
+#input-container {
+    /* border: 2px solid rgba(60, 64, 61, .5); */
+    border-radius: 2px;
 } 
-#input-container a{
+#input-container li{
+    padding: 2px;
+    /* border-bottom: 5px solid rgba(163,188, 182, 0.6); */
+} 
+#input-container a {
     border: 1px solid rgba(60, 64, 61, 1);
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.5);
@@ -59,6 +86,8 @@ footer h1 {
     display: grid;
 
 } 
+/* End of activity-box */
+
 /* Map interactive box */
 #interactiveBox {
      position: block;
@@ -67,7 +96,9 @@ footer h1 {
       width: 60vw; 
       height: 25vw;
 }
-/* 5 day forecast */
+/* End of Map interactive box style */
+
+/* 5 day forecast Style Start */
 
 .forecast {
     display: inline-block;
@@ -87,12 +118,8 @@ footer h1 {
 .column {
     background-color: var(--tertiary-color);
 }
-/* class btn to change the background color of the buttons in the activities box  */
-.btn {
-    background-color: rgba(163,188, 182, 0.6);
-    padding: 2px;
-    
-}
+
+
 
 main input {
     padding: 10px;
