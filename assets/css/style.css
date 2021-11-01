@@ -14,17 +14,9 @@ html {
     scroll-behavior: smooth;
 }
 
-footer h1 {
-    padding: 15px;
-    font-size: xx-large;
-    color: white;
-}
 
-.footer {
-    background-color: rgba(60, 64, 61, 0.5);
-    
-    color: black;
-}
+
+
 
 .hero-body {
     background-image: url('https://hips.hearstapps.com/amv-prod-gp.s3.amazonaws.com/gearpatrol/wp-content/uploads/2016/06/best-day-hikes-gear-patrol-full-lead-1440.jpg');
@@ -33,6 +25,24 @@ footer h1 {
     background-size: cover;
     background-repeat: no-repeat;
     
+}
+
+.hero-body .h-title {
+    color: white;
+    background-color:rgba(163,188, 182, 0.9);
+    border-bottom:2px solid rgba(60, 64, 61, 1);
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero-body .h-body {
+    color: white;
+    background-color:rgba(163,188, 182, 0.9);
+    border-bottom:2px solid rgba(60, 64, 61, 1);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
 }
 
 .columns-gap {
@@ -151,6 +161,24 @@ main input {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly; */
+}
+/* Start of the footer class */
+footer {
+    background-color: rgba(60, 64, 61, 1);
+}
+
+#nav {
+    background-color: rgba(85, 124, 196, 0.9);
+}
+footer h1 {
+    /* background-color: rgba(163,188, 182, .3); */
+    padding: 15px;
+    border-bottom: 1px solid rgba(60, 64, 61, 1);
+    font-size: xx-large;
+    color: rgba(60, 64, 61, 1);
+}
+#nav .copyright-tag {
+    padding-right: 10px;
 }
 
 
