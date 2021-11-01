@@ -76,7 +76,7 @@ function parkWeatherInfo() {
        console.log(result.data[0]);
         weatherInfo = result.data;
         var ulEl = document.createElement("ul");
-        // do all the html stuff to display the parks
+        // do all the html creation to display the parks weatherInfo
         for(var i = 0; i < result.data.length; i++) {
             
             var liEl = document.createElement("li");

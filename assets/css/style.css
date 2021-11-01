@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #3C403D;
-    --secondary-color: #39603D;
-    --tertiary-color: #A3BCB6;
+    --primary-color: rgba(60, 64, 61, 1);
+    --secondary-color: rgba(57, 96, 61, 1);
+    --tertiary-color: rgba(163,188, 182, 1);
   };
 /* STYLING COLORS :
     White: #FFFFFF
@@ -20,11 +20,11 @@ footer h1 {
     color: white;
 }
 
-footer {
-    background-color: var(--primary-color);
+.footer {
+    background-color: rgba(60, 64, 61, 0.5);
+    
     color: white;
 }
-
 
 .hero-body {
     background-image: url('https://hips.hearstapps.com/amv-prod-gp.s3.amazonaws.com/gearpatrol/wp-content/uploads/2016/06/best-day-hikes-gear-patrol-full-lead-1440.jpg');
@@ -42,13 +42,24 @@ footer {
      
 }
 
-.box {
-    border-radius: 5%;
-    border: 1px solid blue;
+#activity-box {
+    border-radius: 5px;
+    border: 1px solid rgba(60, 64, 61, 1);
     padding: 5px;
-    background-color:rgb(85, 124, 196);
+    background-color:rgba(85, 124, 196, 0.3);
 }
+#input-container {
+    border: 1px solid rgba(60, 64, 61, 1);
+} 
+#input-container a{
+    border: 1px solid rgba(60, 64, 61, 1);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px;
+    display: grid;
 
+} 
+/* Map interactive box */
 #interactiveBox {
      position: block;
       top: 0; 
@@ -76,9 +87,10 @@ footer {
 .column {
     background-color: var(--tertiary-color);
 }
-
+/* class btn to change the background color of the buttons in the activities box  */
 .btn {
-    color: var(--secondary-color);
+    background-color: rgba(163,188, 182, 0.6);
+    padding: 2px;
     
 }
 

@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.css" rel="stylesheet">
     
   
@@ -31,35 +32,44 @@
       <div id="" class="navbar-menu has-background-success">
         <div class="navbar-start">
           <!-- Add the has-background- to  change the color of the navbar links to separate which ones are which - change to right color later -->
-          <a class="navbar-item">
-            Home
+          <a class="navbar-item" href="index.html">
+            Weather Trails
           </a>
         
           <a class="navbar-item" href="#mapBox">
-            Trail Map
+            Map
           </a>
-
+          <a class="navbar-item" href="#activity-box">
+            Nearby Places
+          </a>
+          <a class="navbar-item" href="#directions-info-box">
+            Directions & Landmarks
+          </a>
           <a class="navbar-item" href="#weather">
-            Weather
+            Weather 5 Day
           </a>
+          <a class="navbar-item" href="#weather-info-btn">
+            Weather Info
+          </a>
+          
           
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">
-              Favorites
+              Pages
             </a>
             
             <div class="navbar-dropdown">
-              <a class="navbar-item" href="wishlist">
-                Trail Wishlist
+              <a class="navbar-item" href="/">
+                
               </a>
 
-              <a class="navbar-item" href="favorites">
-                Favorite Trails
+              <a class="navbar-item" href="/">
+                
               </a>
 
               <hr class="navbar-divider">
               <a class="navbar-item">
-                Dislike Trails
+                
               </a>
             </div>
           </div>
@@ -86,7 +96,7 @@
 <!-- end of the hero section -->
 
 <!-- 5 day weather forecast -->
-<main class="columns">
+<main class="columns" id="weather">
   <div class="column">
     <div class="column">
      <h3 class="title">Search for a City</h3>
@@ -124,7 +134,7 @@
 <!-- End of Map -->
 
 <!-- Start of the places list/form -->
-  <div class="box">
+  <div id="activity-box" class="box">
     <nav class="panel">
       <p class="panel-heading">
         Activities & Places Related to your search
@@ -133,16 +143,16 @@
         <!-- <p class="control has-icons-left"> -->
           <div class="control">
             <input id="input-state" class="input" type="text" placeholder="Search using state acronym">
-            <button id="search-city-btn" class="button is-primary has-background-info">Search</button>
+            <button id="search-city-btn" class="button is-primary has-background-info btn">Search</button>
             <p>Click links added to each result for more info from the National Parks Website</p>
           </div>    
         
       </div>
       <p class="panel-tabs">
-        <a class="is-active button is-success">Nearby Places, Images & Description</a>
+        <a class="is-active button btn">Nearby Places, Images & Description</a>
         <!-- <a>Favorites</a> -->
-        <a id="directions-btn"class="button">Directions & Landmarks</a>
-        <a id="weather-info-btn" class="button">Weather Info</a>
+        <a id="directions-btn" class="button btn">Directions & Landmarks</a>
+        <a id="weather-info-btn" class="button btn">Weather Info</a>
       </p>
       
       <div id="input-container" class="panel-block">
@@ -160,8 +170,8 @@
 
 
   <!-- footer -->
-  <footer>
-    <nav class="navbar navbar-brand has-background-success is-justify-content-space-between">
+  <footer class="footer">
+    <nav id="nav"class="navbar navbar-brand has-background-success is-justify-content-space-between">
 
       <h1>Have a Great Day Outdoors!</h1>
 
